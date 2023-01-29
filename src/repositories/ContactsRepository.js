@@ -1,6 +1,3 @@
-// const { v4 } = require('uuid');
-
-const contacts = require('../mocks/contacts');
 const db = require('../db');
 class ContactsRepository {
   async findAll(orderBy = 'ASC') {
@@ -41,12 +38,9 @@ class ContactsRepository {
     return row;
   }
 
-  delete(id) {
-    return new Promise(resolve => {
-      const index = contacts.findIndex(contact => contact.id === id);
-      contacts.splice(index, 1);
-      resolve();
-    });
+  async delete(id) {
+    const deleteOp = await db.query('DELETE FROM contacts WHERE id = $1', [id]);
+    return deleteOp;
   }
 }
 
