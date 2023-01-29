@@ -1,0 +1,18 @@
+{
+  "verbose": true,
+  "watch": [
+    "src"
+  ],
+  "ext": "js, mjs, jsx, ts, tsx, json, node",
+  "ignore": [
+    "*.spec.[jt]s?(x)",
+    "*.test.[jt]s?(x)",
+    "*.d.ts",
+    "coverage",
+    "dist",
+    "build",
+    "docs",
+    "node_modules",
+    ".git"
+  ]
+}

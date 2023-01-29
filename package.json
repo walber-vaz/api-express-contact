@@ -1,0 +1,32 @@
+{
+  "name": "api-express-contact",
+  "version": "1.0.0",
+  "description": "Api de contatos",
+  "main": "src/app.js",
+  "author": "Walber Vaz <wvs.walber@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --config nodemon.json",
+    "lint": "eslint --fix src/**/*.{js,jsx}",
+    "lint:check": "eslint src/**/*.{js,jsx}",
+    "lint:fix": "eslint --fix src/**/*.{js,jsx}",
+    "prettier": "prettier --write src/**/*.{js,jsx}",
+    "prettier:check": "prettier --check src/**/*.{js,jsx}",
+    "prettier:fix": "prettier --write src/**/*.{js,jsx}"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "pg": "^8.8.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.3"
+  }
+}
