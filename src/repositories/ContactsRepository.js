@@ -23,14 +23,6 @@ class ContactsRepository {
     return row;
   }
 
-  delete(id) {
-    return new Promise(resolve => {
-      const index = contacts.findIndex(contact => contact.id === id);
-      contacts.splice(index, 1);
-      resolve();
-    });
-  }
-
   async create({ name, email, phone, category_id }) {
     const [row] = await db.query(
       'INSERT INTO contacts (name, email, phone, category_id) VALUES ($1, $2, $3, $4) RETURNING *',
@@ -40,19 +32,20 @@ class ContactsRepository {
     return row;
   }
 
-  update(id, { name, email, phone, category_id }) {
-    return new Promise(resolve => {
-      const updateContact = {
-        id,
-        name,
-        email,
-        phone,
-        category_id,
-      };
+  async update(id, { name, email, phone, category_id }) {
+    const [row] = await db.query(
+      'UPDATE contacts SET name = $1, email = $2, phone = $3, category_id = $4 WHERE id = $5 RETURNING *',
+      [name, email, phone, category_id, id],
+    );
 
+    return row;
+  }
+
+  delete(id) {
+    return new Promise(resolve => {
       const index = contacts.findIndex(contact => contact.id === id);
-      contacts[index] = updateContact;
-      resolve(updateContact);
+      contacts.splice(index, 1);
+      resolve();
     });
   }
 }
