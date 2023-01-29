@@ -72,7 +72,7 @@ class ContactController {
   async delete(req, res) {
     const { id } = req.params;
     await ContactsRepository.delete(id);
-    res.sendStatus(204);
+    return res.sendStatus(204);
   }
 }
 
