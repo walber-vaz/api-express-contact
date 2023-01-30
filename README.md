@@ -3,7 +3,7 @@
 
 # Criando uma api de cadastro de contatos
 
-Estudos sobre backend usando express com seus middlewares e contruindo um CRUD de cadastro de usúarios.
+Estudos sobre backend usando express com seus middlewares e construindo um CRUD de cadastro de usuários.
 
 
 ## Funcionalidades
@@ -23,7 +23,7 @@ Rotas default
 // Todos os contatos cadastrados
 GET: /contacts
 
-// Retorna um contato pelo id passado por paramêtro
+// Retorna um contato pelo id passado por parâmetro
 GET: /contacts/:id
 
 // Deleta um contato
