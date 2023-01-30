@@ -1,12 +1,10 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-
 # Criando uma api de cadastro de contatos
 
 Estudos sobre backend usando express com seus middlewares e construindo um CRUD de cadastro de usuários.
 
-
-## Funcionalidades
+## Dependência do projeto
 
 - Nodejs >= 16.x && Nodejs <= 18.x
 - Express
@@ -17,10 +15,10 @@ Estudos sobre backend usando express com seus middlewares e construindo um CRUD 
 - Docker
 - Docker Compose
 
-Rotas default
+## Funcionalidades Rotas default
 
 ```
-// Todos os contatos cadastrados
+// Retorna todos os contatos cadastrados
 GET: /contacts
 
 // Retorna um contato pelo id passado por parâmetro
@@ -52,13 +50,11 @@ PUT: /contacts/:id
   }
 ```
 
-
 ## Stack utilizada
 
 **Front-end:** React
 
 **Back-end:** Node, Express, Postgresql, Docker
-
 
 ## Contribuindo
 
@@ -68,7 +64,6 @@ Contribuições são sempre bem-vindas!
 
 Se você tiver algum feedback, por favor nos deixe saber por meio de issues
 
-
 ## Autores
 
 - [@walber-vaz](https://www.github.com/walber-vaz)
@@ -77,4 +72,3 @@ Se você tiver algum feedback, por favor nos deixe saber por meio de issues
 ## Licença
 
 [MIT](https://choosealicense.com/licenses/mit/)
-
