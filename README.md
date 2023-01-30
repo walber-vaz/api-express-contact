@@ -72,7 +72,7 @@ Se você tiver algum feedback, por favor nos deixe saber por meio de issues
 ## Autores
 
 - [@walber-vaz](https://www.github.com/walber-vaz)
-
+- [Meu Linkedin](https://www.linkedin.com/in/walber-vaz/)
 
 ## Licença
 
