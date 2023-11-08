@@ -21,9 +21,8 @@ class ContactController {
       return res.status(400).json({ error: 'Name is required' });
     }
 
-    const isContactEmailAlreadyExists = await ContactsRepository.findByEmail(
-      email,
-    );
+    const isContactEmailAlreadyExists =
+      await ContactsRepository.findByEmail(email);
 
     if (isContactEmailAlreadyExists) {
       return res.status(400).json({ error: 'Contact email already exists' });
@@ -52,9 +51,8 @@ class ContactController {
       return res.status(400).json({ error: 'Name is required' });
     }
 
-    const isContactEmailAlreadyExists = await ContactsRepository.findByEmail(
-      email,
-    );
+    const isContactEmailAlreadyExists =
+      await ContactsRepository.findByEmail(email);
     if (isContactEmailAlreadyExists && isContactEmailAlreadyExists.id !== id) {
       return res.status(400).json({ error: 'Contact email already exists' });
     }

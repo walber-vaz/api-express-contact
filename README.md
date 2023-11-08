@@ -43,10 +43,10 @@ PUT: /contacts/:id
 
   // Body
   {
-	"name": "Fulano Sobrenome",
-	"email": "fulano@mail.com",
-	"phone": "1234657890",
-	"category_id": "id da categoria cadastra para esse contato"
+ "name": "Fulano Sobrenome",
+ "email": "fulano@mail.com",
+ "phone": "1234657890",
+ "category_id": "id da categoria cadastra para esse contato"
   }
 ```
 
