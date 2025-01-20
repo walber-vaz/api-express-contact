@@ -1,32 +1,29 @@
 {
-  "name": "api-express-contact",
-  "version": "1.0.0",
-  "description": "Api de contatos",
-  "main": "src/app.js",
-  "author": "Walber Vaz <wvs.walber@gmail.com>",
-  "license": "MIT",
-  "scripts": {
-    "dev": "nodemon --config nodemon.json",
-    "lint": "eslint --fix src/**/*.{js,jsx}",
-    "lint:check": "eslint src/**/*.{js,jsx}",
-    "lint:fix": "eslint --fix src/**/*.{js,jsx}",
-    "prettier": "prettier --write src/**/*.{js,jsx}",
-    "prettier:check": "prettier --check src/**/*.{js,jsx}",
-    "prettier:fix": "prettier --write src/**/*.{js,jsx}"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.19.2",
-    "express-async-errors": "^3.1.1",
-    "helmet": "^7.1.0",
-    "pg": "^8.11.3"
-  },
-  "devDependencies": {
-    "eslint": "^8.53.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.1",
-    "nodemon": "^3.0.1",
-    "prettier": "^3.0.3"
-  }
+    "name": "api-express-contact",
+    "version": "1.0.0",
+    "description": "Api de contatos",
+    "main": "src/app.js",
+    "type": "module",
+    "author": "Walber Vaz <wvs.walber@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "nodemon --config nodemon.json",
+        "lint": "eslint src/**/*.{js,jsx} && prettier --check src/**/*.{js,jsx}",
+        "lint:fix": "eslint --fix src/**/*.{js,jsx} && prettier --write src/**/*.{js,jsx}"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.20.0",
+        "express-async-errors": "^3.1.1",
+        "helmet": "^7.1.0",
+        "postgres": "^3.4.4"
+    },
+    "devDependencies": {
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "nodemon": "^3.1.4",
+        "prettier": "^3.3.3"
+    }
 }

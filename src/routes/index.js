@@ -1,7 +1,7 @@
-const { Router } = require('express');
+import { Router } from 'express';
 
-const ContactController = require('../controllers/ContactController');
-const CategoryController = require('../controllers/CategoryController');
+import ContactController from '../controllers/ContactController.js';
+import CategoryController from '../controllers/CategoryController.js';
 
 const router = Router();
 
@@ -15,4 +15,4 @@ router.get('/categories', CategoryController.index);
 router.post('/categories', CategoryController.store);
 router.delete('/categories/:id', CategoryController.delete);
 
-module.exports = router;
+export default router;

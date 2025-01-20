@@ -1,0 +1,9 @@
+services:
+    postgres-compose:
+        image: postgres:16.1-alpine
+        container_name: contact_api_postgres
+        environment:
+            POSTGRES_USER: 'root'
+            POSTGRES_PASSWORD: 'docker'
+        ports:
+            - '5432:5432'
